@@ -25,7 +25,7 @@ public class Calculator {
 
     public String distanceFromGoal() {
        if (this.total < this.goal) {
-           return "$" + (this.goal - this.total) + " away from goal of $" + this.goal;
+           return "$" + String.format("%.2f", (this.goal - this.total)) + " away from goal of $" + String.format("%.2f", this.goal);
        }
        else{
            return "You met your goal!";
